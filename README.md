@@ -17,7 +17,7 @@
 3. from the SeoTrack folder run "dotnet run"
 4. to run tests from the root of the repository run "dotnet test"
 
-## from docker WIP
+## using docker WIP
 
 
 
