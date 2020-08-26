@@ -6,11 +6,13 @@ EXPOSE 80
 EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
+ENV PATH="$PATH:/root/.dotnet/tools"
+RUN dotnet tool install -g Microsoft.Web.LibraryManager.Cli
 WORKDIR /src
-COPY ["SeoTrack.csproj", ""]
-RUN dotnet restore "./SeoTrack.csproj"
 COPY . .
-WORKDIR "/src/."
+RUN dotnet restore
+WORKDIR /src/SeoTrack
+RUN libman restore
 RUN dotnet build "SeoTrack.csproj" -c Release -o /app/build
 
 FROM build AS publish
