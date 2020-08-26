@@ -17,9 +17,11 @@
 3. from the SeoTrack folder run "dotnet run"
 4. to run tests from the root of the repository run "dotnet test"
 
-## using docker WIP
-
-
+## using docker
+### build
+from the root of the repository run "docker build -t yourtag ."
+### run
+run "docker run -it -p 5001:80 yourtag". Replace 5001 with the port of your choosing. connect on http protocol.
 
 # Points of interest
 
