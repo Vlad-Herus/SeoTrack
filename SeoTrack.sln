@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeoTrack", "SeoTrack\SeoTrack.csproj", "{B4AC993B-61D2-4E8B-8DB8-E050C1FEF9A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeoTrackTests", "SeoTrackTests\SeoTrackTests.csproj", "{7A3BF3F9-A5E8-47B7-8398-DAAFC555993E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeoTrackTests", "SeoTrackTests\SeoTrackTests.csproj", "{7A3BF3F9-A5E8-47B7-8398-DAAFC555993E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5FFC07BA-A481-4A8B-A3E6-6474233B09B7}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
